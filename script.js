@@ -1,23 +1,18 @@
-// alert("Please enter ther requested information");
-function myIdCard() {
-    var firstName = document.getElementById('firstName').innerHTML;
-    var lastName = document.getElementById('lastName').innerHTML;
+
+function idCard() {
+    var firstName = document.getElementById('firstName').value;
+    var lastName = document.getElementById('lastName').value;
+    var DOB = document.getElementById('DOB').value;
+    var phoneNumber = document.getElementById('phoneNumber').value;
+    var address1 = document.getElementById('address').value;
+    var address2 = document.getElementById('address2').value;
+
+
     document.getElementsById('postFullName').innerHTML = firstName + ' ' + lastName;
-
-        
-
-
-        // var DOB = document.getElementById('DOB').value;
-        // var phoneNumber = document.getElementById('phoneNumber').value;
-        // var address1 = document.getElementById('address1').value;
-        // var address2 = document.getElementById('address2').value;
-
-
-        
-        // document.getElementsById("postDOB").innerHTML = DOB;
-        // document.getElementsById("postPhoneNumber").innerHTML = phoneNumber;
-        // document.getElementsById("postAddress1").innerHTML = address1;
-        // document.getElementsById("postAddress2").innerHTML = address2;
+    document.getElementsById("postDOB").innerHTML = DOB;
+    document.getElementsById("postPhoneNumber").innerHTML = phoneNumber;
+    document.getElementsById("postAddress1").innerHTML = address1;
+    document.getElementsById("postAddress2").innerHTML = address2;
 
 }
 
